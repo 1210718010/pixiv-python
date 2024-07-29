@@ -46,7 +46,7 @@ def image(path):
     elif 'fileEx' in locals().keys():
         url = url.rsplit('.', 1)[0] + f'.{fileEx}'
 
-    return f"<script>window.location.href='{url}'</script>"
+    return redirect(f'{url}')
 
 if __name__ == '__main__':
     app.run(port=7000)
