@@ -15,11 +15,11 @@ app = Flask(__name__)
 def image(path):
     if '-' in path and '.' in path:
         pid = path.split('-')[0]
-        pNum = path.split('-')[1].split('.')[0]
+        pNum = str(int(path.split('-')[1].split('.')[0]) - 1)
         fileEx = path.split('-')[1].split('.')[1]
     elif '-' in path:
         pid = path.split('-')[0]
-        pNum = path.split('-')[1]
+        pNum = str(int(path.split('-')[1]) - 1)
     elif '.' in path:
         pid = path.split('.')[0]
         fileEx = path.split('.')[1]
