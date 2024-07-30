@@ -24,9 +24,7 @@ https://<font color=#0051af>i.muxmus.com:5000</font>/img-original/img/2011/11/05
 
 格式：
 
-+ 单张，一个id中只有一张图片或多张中的第一张：
-
-https://i.muxmus.com:5000/<font color=#0051af>id</font>
++ 单张，一个id中只有一张图片或多张中的第一张：https://i.muxmus.com:5000/<font color=#0051af>id</font>
 
 → https://i.muxmus.com:5000/<font color=#0051af>22848009</font>
 
