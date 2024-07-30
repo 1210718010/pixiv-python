@@ -54,4 +54,4 @@ https://<font color=#0051af>i.muxmus.com:5000</font>/img-original/img/2011/11/05
 
 *   P站的动图并非gif而是多张jpg循环播放，如果请求的是动图，会返回第一帧的jpg。
 
-*   P站的图片扩展名目前有且仅有jpg(jpeg)、png、gif三种，注意此处的gif并非gif动图，只是gif格式的静态图片。 [可以在pixiv上投稿什么图片格式](https://www.pixiv.help/hc/zh-cn/articles/235584428-%E5%8F%AF%E4%BB%A5%E5%9C%A8pixiv%E4%B8%8A%E6%8A%95%E7%A8%BF%E4%BB%80%E4%B9%88%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F)&nbsp;&nbsp;[如何在pixiv上投稿插画？](https://www.pixiv.help/hc/zh-cn/articles/235584588-%E5%A6%82%E4%BD%95%E5%9C%A8pixiv%E4%B8%8A%E6%8A%95%E7%A8%BF%E6%8F%92%E7%94%BB)
+*   P站的图片扩展名目前有且仅有jpg、png、gif三种，注意此处的gif并非gif动图，只是gif格式的静态图片。 [可以在pixiv上投稿什么图片格式](https://www.pixiv.help/hc/zh-cn/articles/235584428-%E5%8F%AF%E4%BB%A5%E5%9C%A8pixiv%E4%B8%8A%E6%8A%95%E7%A8%BF%E4%BB%80%E4%B9%88%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F)&nbsp;&nbsp;[如何在pixiv上投稿插画？](https://www.pixiv.help/hc/zh-cn/articles/235584588-%E5%A6%82%E4%BD%95%E5%9C%A8pixiv%E4%B8%8A%E6%8A%95%E7%A8%BF%E6%8F%92%E7%94%BB)
