@@ -48,7 +48,7 @@ https://<font color=#0051af>i.muxmus.com:5000</font>/img-original/img/2011/11/05
 
 注意事项：
 
-*	id：作品页网址最后的一串数字，如“https://www.pixiv.net/artworks/22848009”当中的“22848009”。 [什么是作品ID？](https://www.pixiv.help/hc/zh-cn/articles/235585168-%E4%BB%80%E4%B9%88%E6%98%AF%E4%BD%9C%E5%93%81ID)
+*	id：作品页网址最后的一串数字，如「`“https://www.pixiv.net/artworks/22848009”当中的“22848009”」。 [什么是作品ID？](https://www.pixiv.help/hc/zh-cn/articles/235585168-%E4%BB%80%E4%B9%88%E6%98%AF%E4%BD%9C%E5%93%81ID)
 
 *   该功能通过爬取id对应的html页面获取原图网址，并进行重定向。但由于只能得到第一张的网址，如果是多图的话，第一张以外的扩展名都是未知的，所以只能默认都采用第一张的扩展名。如果因默认的扩展名错误而404，请采用上面的第三种格式，自定义扩展名。
 
