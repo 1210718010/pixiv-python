@@ -14,13 +14,9 @@
 
 https://<font color=#0051af>i.pximg.net</font>/img-original/img/2011/11/05/00/32/32/22848009_p0.jpg
 
-<img src=https://i.pximg.net/img-original/img/2011/11/05/00/32/32/22848009_p0.jpg width=300px />
-
 ↓
 
 https://<font color=#0051af>i.muxmus.com:5000</font>/img-original/img/2011/11/05/00/32/32/22848009_p0.jpg
-
-<img src=https://i.muxmus.com:5000/img-original/img/2011/11/05/00/32/32/22848009_p0.jpg width=300px />
 
 #### 2. 通过图片id抓取原图（实验性）：
 
