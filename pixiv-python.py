@@ -1,11 +1,10 @@
-from flask import Flask, redirect
+from flask import Flask, redirect, make_response
 from bs4 import BeautifulSoup
 import requests
 import json
 
 headers = {
     "cookie": "",    #若要抓取R-18和R-18G，需在此处填写cookie
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
     "referer": "https://www.pixiv.net/"
 }
 
@@ -28,25 +27,27 @@ def image(path):
 
     requests.packages.urllib3.disable_warnings()
     response = requests.get(f"https://www.pixiv.net/artworks/{pid}", headers=headers, verify=False)
-    html = response.content
+    if response.status_code != 200:
+        return make_response('', response.status_code)
+    else:
+        html = response.content
 
-    soup = BeautifulSoup(html, 'html.parser')
-    links = soup.find('meta', id='meta-preload-data')
+        soup = BeautifulSoup(html, 'html.parser')
+        links = soup.find('meta', id='meta-preload-data')
 
-    jsonData = links.get('content')
-    content = json.loads(jsonData)
-    illust = content['illust'][f'{pid}']['urls']
-    url = illust['original'].replace("i.pximg.net", "i.muxmus.com:5000")
+        jsonData = links.get('content')
+        content = json.loads(jsonData)
+        url = content['illust'][f'{pid}']['urls']['original'].replace("i.pximg.net", "i.muxmus.com:5000")
 
-    if 'pNum' in locals().keys() and 'fileEx' in locals().keys():
-        url = url.replace('_p0.', f'_p{pNum}.')
-        url = url.rsplit('.', 1)[0] + f'.{fileEx}'
-    elif 'pNum' in locals().keys():
-        url = url.replace('_p0.', f'_p{pNum}.')
-    elif 'fileEx' in locals().keys():
-        url = url.rsplit('.', 1)[0] + f'.{fileEx}'
+        if 'pNum' in locals().keys() and 'fileEx' in locals().keys():
+            url = url.replace('_p0.', f'_p{pNum}.')
+            url = url.rsplit('.', 1)[0] + f'.{fileEx}'
+        elif 'pNum' in locals().keys():
+            url = url.replace('_p0.', f'_p{pNum}.')
+        elif 'fileEx' in locals().keys():
+            url = url.rsplit('.', 1)[0] + f'.{fileEx}'
 
-    return redirect(f'{url}')
+        return redirect(f'{url}')
 
 if __name__ == '__main__':
     app.run(port=7000)
