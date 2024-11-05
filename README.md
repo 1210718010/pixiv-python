@@ -27,19 +27,23 @@ https://<font color=#0051af>i.muxmus.com</font>/img-original/img/2011/11/05/00/3
 + 单张，一个id中只有一张图片或多张中的第一张：
 
 	https://<font>i.muxmus.com/</font><font color=#0051af>id</font>
+ 
  	https://<font>i.muxmus.com/</font><font color=#0051af>22848009</font>
 
 + 多张（漫画、组图），一个id中有多张图片：
 
 	https://<font>i.muxmus.com/</font><font color=#0051af>id</font>-<font color=#0051af>第几张</font>
+ 
 	https://<font>i.muxmus.com/</font><font color=#0051af>22848009</font>-<font color=#0051af>1</font>
 
 + 指定扩展名（优先级较高，非必要请勿使用，如需使用请确保指定的扩展名正确）：
 
-	https://<font>i.muxmus.com/</font><font color=#0051af>id</font>.<font color=#0051af>扩展名</font>\
+	https://<font>i.muxmus.com/</font><font color=#0051af>id</font>.<font color=#0051af>扩展名</font>
+ 
 	https://<font>i.muxmus.com/</font><font color=#0051af>22848009</font>.<font color=#0051af>jpg</font>
 
 	https://<font>i.muxmus.com/</font><font color=#0051af>id</font>-<font color=#0051af>第几张</font>.<font color=#0051af>扩展名</font>
+ 
 	https://<font>i.muxmus.com/</font><font color=#0051af>22848009</font>-<font color=#0051af>1</font>.<font color=#0051af>jpg</font>
 
 注意事项：
